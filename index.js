@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 const express = require("express");
 require("dotenv").config();
-const cors = require("cors");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -13,11 +12,6 @@ const itemRouter = require("./router/item");
 // Middleware
 app.use(express.json());
 app.use(authRouter);
-app.use(
-  cors({
-    origin: "http://localhost:3000",
-  })
-);
 app.use(exploreRouter);
 app.use(itemRouter);
 
