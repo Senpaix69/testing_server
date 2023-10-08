@@ -21,6 +21,10 @@ const DELETE_ITEM = "/api/deleteItem";
 const UPDATE_ITEM = "/api/updateItem";
 const GET_ITEM_DETAILS = "/api/getItemDetails";
 
+// main routes
+const GET_ALL_SLIDERS = "/api/getAllSliders";
+const ADD_SLIDER = "/api/addSlider";
+
 module.exports = {
   PASSWORD_KEY,
   SIGN_IN,
@@ -38,4 +42,6 @@ module.exports = {
   GET_USER,
   UPDATE_ITEM,
   GET_ITEM_DETAILS,
+  GET_ALL_SLIDERS,
+  ADD_SLIDER,
 };

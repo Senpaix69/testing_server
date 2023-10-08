@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 5000;
 const authRouter = require("./router/auth");
 const exploreRouter = require("./router/explore");
 const itemRouter = require("./router/item");
+const homeRouter = require("./router/home");
 
 // Middleware
 app.use(cors());
@@ -16,6 +17,7 @@ app.use(express.json());
 app.use(authRouter);
 app.use(exploreRouter);
 app.use(itemRouter);
+app.use(homeRouter);
 
 // Connect to MongoDB using Mongoose
 mongoose
